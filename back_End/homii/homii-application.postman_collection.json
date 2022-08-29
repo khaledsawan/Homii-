@@ -1,0 +1,556 @@
+{
+	"info": {
+		"_postman_id": "4b2505f6-e8f0-444c-b14d-925c3766b2a0",
+		"name": "homii-application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "student register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "mohamad",
+									"type": "default"
+								},
+								{
+									"key": "lastName",
+									"value": "elawi",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "mohamad.dev.elawi@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "default"
+								},
+								{
+									"key": "city",
+									"value": "damas",
+									"type": "default"
+								},
+								{
+									"key": "address",
+									"value": "mazzeh",
+									"type": "default"
+								},
+								{
+									"key": "mobile",
+									"value": "0938120581",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "hello",
+									"type": "default"
+								},
+								{
+									"key": "age",
+									"value": "21",
+									"type": "default"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "default"
+								},
+								{
+									"key": "university_college",
+									"value": "ite",
+									"type": "default"
+								},
+								{
+									"key": "academic_year",
+									"value": "4",
+									"type": "default"
+								},
+								{
+									"key": "university_card",
+									"type": "file",
+									"src": "/C:/Users/mohammad/Pictures/Saved Pictures/287494689_541786067482991_1026455631942863110_n.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "office@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "offcieRegister",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "offiec 4",
+									"type": "default"
+								},
+								{
+									"key": "",
+									"value": "hjjhsa[k",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "office5@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "default"
+								},
+								{
+									"key": "address",
+									"value": "mazzeh",
+									"type": "default"
+								},
+								{
+									"key": "mobile",
+									"value": "0925164816",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "hello",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/office/Register",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"office",
+								"Register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "donorRegister",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "donor1",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "donor@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "default"
+								},
+								{
+									"key": "phone",
+									"value": "0999999999",
+									"type": "default"
+								},
+								{
+									"key": "work_details",
+									"value": "hello",
+									"type": "default"
+								},
+								{
+									"key": "address",
+									"value": "mazzeh",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/donor/Register",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"donor",
+								"Register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY1NzU0NzY5OSwiZXhwIjoxNjU3NTUxMjk5LCJuYmYiOjE2NTc1NDc2OTksImp0aSI6InJBZ0NFcFZ4VGZ3TE5mWnoiLCJzdWIiOjIsInBydiI6IjBmMzE1NWZjYWQwZWU1YzJlMGZhNDgyNTE4Yzg3NjY2MTU4YmEwM2EifQ.AtMqdzj_aMbZrzloTmUFPM5fT8Qya7WclowIKw5v2IQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/logout",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "office",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY1NzU0NzY5OSwiZXhwIjoxNjU3NTUxMjk5LCJuYmYiOjE2NTc1NDc2OTksImp0aSI6InJBZ0NFcFZ4VGZ3TE5mWnoiLCJzdWIiOjIsInBydiI6IjBmMzE1NWZjYWQwZWU1YzJlMGZhNDgyNTE4Yzg3NjY2MTU4YmEwM2EifQ.AtMqdzj_aMbZrzloTmUFPM5fT8Qya7WclowIKw5v2IQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/office/house/index",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"office",
+								"house",
+								"index"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY1NTQ5MDMyMiwiZXhwIjoxNjU1NDkzOTIyLCJuYmYiOjE2NTU0OTAzMjIsImp0aSI6InJmOTltMFJYUGtVYnFXM28iLCJzdWIiOjMsInBydiI6IjBmMzE1NWZjYWQwZWU1YzJlMGZhNDgyNTE4Yzg3NjY2MTU4YmEwM2EifQ.VxGLPBpw2ZYzjO47ao8fNuxUgZXQkyG-n-vqlC2yadA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/office/house/show/1",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"office",
+								"house",
+								"show",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY1NTQ5MDMyMiwiZXhwIjoxNjU1NDkzOTIyLCJuYmYiOjE2NTU0OTAzMjIsImp0aSI6InJmOTltMFJYUGtVYnFXM28iLCJzdWIiOjMsInBydiI6IjBmMzE1NWZjYWQwZWU1YzJlMGZhNDgyNTE4Yzg3NjY2MTU4YmEwM2EifQ.VxGLPBpw2ZYzjO47ao8fNuxUgZXQkyG-n-vqlC2yadA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/office/house/store",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"office",
+								"house",
+								"store"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY1NTQ5MDMyMiwiZXhwIjoxNjU1NDkzOTIyLCJuYmYiOjE2NTU0OTAzMjIsImp0aSI6InJmOTltMFJYUGtVYnFXM28iLCJzdWIiOjMsInBydiI6IjBmMzE1NWZjYWQwZWU1YzJlMGZhNDgyNTE4Yzg3NjY2MTU4YmEwM2EifQ.VxGLPBpw2ZYzjO47ao8fNuxUgZXQkyG-n-vqlC2yadA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{local}}/office/house/update/2",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"office",
+								"house",
+								"update",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY1NTQ5MDMyMiwiZXhwIjoxNjU1NDkzOTIyLCJuYmYiOjE2NTU0OTAzMjIsImp0aSI6InJmOTltMFJYUGtVYnFXM28iLCJzdWIiOjMsInBydiI6IjBmMzE1NWZjYWQwZWU1YzJlMGZhNDgyNTE4Yzg3NjY2MTU4YmEwM2EifQ.VxGLPBpw2ZYzjO47ao8fNuxUgZXQkyG-n-vqlC2yadA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{local}}/office/house/delete/1",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"office",
+								"house",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "student",
+			"item": [
+				{
+					"name": "allHouse",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY1NTY3NDUxOSwiZXhwIjoxNjU1Njc4MTE5LCJuYmYiOjE2NTU2NzQ1MTksImp0aSI6IkZMNWM5ckZuVWNPT2pHSzAiLCJzdWIiOjIsInBydiI6IjljNDI5ZTZhNjBjZDUyODU0NzNmMmM4YmM3MDFlYzA5NDhkZjRkOGMifQ.EHpu1pDLA03TQQYy6cltSUy45ZZPwsIInvddQ3tSXCc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/student/house/index",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"student",
+								"house",
+								"index"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY1NTY3NDUxOSwiZXhwIjoxNjU1Njc4MTE5LCJuYmYiOjE2NTU2NzQ1MTksImp0aSI6IkZMNWM5ckZuVWNPT2pHSzAiLCJzdWIiOjIsInBydiI6IjljNDI5ZTZhNjBjZDUyODU0NzNmMmM4YmM3MDFlYzA5NDhkZjRkOGMifQ.EHpu1pDLA03TQQYy6cltSUy45ZZPwsIInvddQ3tSXCc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/student/house/show/1",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"student",
+								"house",
+								"show",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rentHouse",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY1NTY3NDUxOSwiZXhwIjoxNjU1Njc4MTE5LCJuYmYiOjE2NTU2NzQ1MTksImp0aSI6IkZMNWM5ckZuVWNPT2pHSzAiLCJzdWIiOjIsInBydiI6IjljNDI5ZTZhNjBjZDUyODU0NzNmMmM4YmM3MDFlYzA5NDhkZjRkOGMifQ.EHpu1pDLA03TQQYy6cltSUy45ZZPwsIInvddQ3tSXCc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "mutual",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{local}}/student/house/rentHouse/2",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"student",
+								"house",
+								"rentHouse",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
