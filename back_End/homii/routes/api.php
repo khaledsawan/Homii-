@@ -56,7 +56,6 @@ Route::group(['namespace' => 'Donor','prefix'=>'donor'], function () {
 
 Route::group(['prefix'=>'student','namespace'=>'User','middleware'=>'role:student,student'],function(){
     Route::post('addPoints','LoginController@addPoints');
-
     Route::group(['prefix'=>'house'],function(){
         Route::get('index','HouseRentController@index');
         Route::get('show/{house_id}','HouseRentController@show');
