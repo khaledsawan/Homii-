@@ -27,7 +27,6 @@ Route::group(['namespace' => 'User'], function () {
     Route::get('logout', 'LoginController@logout')->name('logout');
     Route::post('register', 'registerController@register');
 });
-
 Route::group(['namespace' => 'Office','prefix'=>'office'], function () {
 
     Route::post('Register', 'RegisterController@register');
